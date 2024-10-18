@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+}
+
+.header {
+    display: flex;
+}
+
+.mortgage-calculator {
+    background-color: whitesmoke;
+    height: 500px;
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    display: grid;  
+    border-radius: 10px;
+}
+
+.col-left {
+    padding: 10px;
+}
+
+.col-right {
+    padding: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:  #0D335D;
+    color: white;
+}
+
+.form-result p {
+    padding: 10px;
+}
+
+
+
+
+.form-item {
+    margin-bottom: 2rem;
+}
+
+.form-symbol {
+    background-color: skyblue;
+    font-weight: 500;
+    padding: .5rem .75rem;
+    color: black;
+    
+}
+
+.form-flex {
+    display: flex;
+
+    border: 1px solid skyblue;
+}
+
+
+
+.form-flex:focus-within {
+    border: 1px solid lime;
+}
+
+.form-flex:focus-within .form-symbol {
+    background-color: lime;
+    border: 1px solid lime;
+}
+
+
+
+input[type=number].error{
+    background-color: red;
+    border: 1px solid red;
+}
+
+
+
+input[type=number] {
+    padding: .25rem;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    width: 100%;
+}
+
+.radio-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid skyblue;
+font-weight: 400;
+margin-bottom: .5rem;
+padding: .50rem;
+gap: 5px;
+}
+
+
+
+
+
+
+input[type=radio] {
+    width: .5rem;
+    height: .5rem;
+    margin-right: .5rem;
+    outline: 1px solid lime;
+    outline-offset: 2px;
+    border-radius: 50%;
+    appearance: none;
+}
+
+
+input[type=radio]:checked {
+    background-color: lime;
+
+}
+
+.radio-input:hover {
+    border: 1px solid limegreen;
+}
+.radio-input:focus-within{
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+}
+
+
+
+
+
+
+.button{
+    background-color: limegreen;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+width: 200px;
+padding: 5px;
+justify-content: center;
+outline: 0;
+border:0;
+}
